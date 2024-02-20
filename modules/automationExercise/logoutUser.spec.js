@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { LoginUserWithCorrectEmailAndPassword } = require('../../../utils/pageObjects/modules/loginUserWithCorrectEmailAndPassword');
+const { LoginUserWithCorrectEmailAndPassword } = require('../../../utils/pageObjects/modules/automationExercise/loginUserWithCorrectEmailAndPassword')
 const { CoreLibrary } = require('../../../utils/library/coreLibrary');
 const inputData = require('../../../utils/data/testdata/inputData.json');
 

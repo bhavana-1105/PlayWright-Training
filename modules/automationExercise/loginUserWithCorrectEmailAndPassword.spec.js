@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { LoginUserWithCorrectEmailAndPassword } = require('../../../utils/pageObjects/modules/loginUserWithCorrectEmailAndPassword');
+const { LoginUserWithCorrectEmailAndPassword } = require('../../../utils/pageObjects/modules/automationExercise/loginUserWithCorrectEmailAndPassword');
 const { CoreLibrary } = require('../../../utils/library/coreLibrary');
 const inputData = require('../../../utils/data/testdata/inputData.json');
 
@@ -13,6 +13,7 @@ test('Login user with correct email and password', async ({ page }) => {
   const coreLib = new CoreLibrary();
   const loginUser = new LoginUserWithCorrectEmailAndPassword(page);
   await test.step("Create account through Signup", async() => {
+    await loginUser.navigateToLoginPage();
     await coreLib.registerAccount(page, inputData.signUpDetails);
     await coreLib.logoutAccount(page);
   });

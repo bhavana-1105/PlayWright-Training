@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { AddReview } = require("../../../utils/pageObjects/modules/addReview");
+const { AddReview } = require('../../../utils/pageObjects/modules/automationExercise/addReview');
 const inputData = require('../../../utils/data/testdata/inputData.json');
 
 test.beforeEach(async({page}) => {

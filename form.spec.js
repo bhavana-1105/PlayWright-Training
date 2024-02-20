@@ -1,7 +1,7 @@
 const { test, expect} = require("@playwright/test")
 const {Form} = require('../utils/pageObjects/form');
 test.describe("Practice Form", () => {
-    test.only("Student Registration Form", async({page}) => {
+    test("Student Registration Form", async({page}) => {
         await page.goto("https://demoqa.com/automation-practice-form");
         const form = new Form(page);
         await expect(form.firstName, "Validating the first name text box visibility").toBeVisible();
