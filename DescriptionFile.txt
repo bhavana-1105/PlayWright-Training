@@ -1,0 +1,9 @@
+Anonymouss Function: An anonymous function is a function without a name. It is also known as a lambda function or a function expression.
+Function expression: Function expression is a function that is assigned to a variable. They can be named or anonymous.
+Difference between anonymous function and function expression: In function expression function can be called before defining the function
+                                                               but in anonyms function, function can be called only after defining the function
+                                                               otherwise Reference error will be observed
+Prototype: Used to implement inheritance in JavaScript, allowing objects to inherit properties and methods from other objects.
+           Every object in JavaScript has an internal [[Prototype]] property that points to its prototype object.
+           When you access a property or method on an object, JavaScript first checks if the property or method exists on the object itself.
+           If it doesn't, JavaScript looks up the prototype chain until it finds the property or method or reaches the end of the chain (null).
